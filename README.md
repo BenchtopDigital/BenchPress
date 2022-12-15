@@ -1,26 +1,33 @@
 # BenchPress
 
-An OOP framework for building modern Wordpress themes and plugins
+## An OOP framework for building modern Wordpress themes and plugins
 
-## Dependencies
+---
+<br/><br/>
 
-1. Docker Desktop
-2. Docker Compose
-3. Composer
-4. Node
-5. NPM or Yarn
+## Required Dependencies
+
+1. Docker + Docker Compose
+2. Composer (PHP)
+3. Node
+4. NPM or Yarn
+<br/><br/>
+---
+<br/>
 
 ## Local Development
 
-#### Clone the repo
+### Clone or Fork the repo
+- `git clone https://github.com/BenchtopDigital/BenchPress.git`
+- `cd BenchPress`
 
-#### Install Dependencies
+### Install Dependencies
 - `composer update`
 - `cd ./theme && npm i && cd..`
 
-#### Create .env
+### Create .env
 - `cp .env.example .env`
 - ##### Edit .env to change any varibales as you prefer
 
-#### Run with Docker Compose
+### Run with Docker Compose
 - `docker compse up -d`
