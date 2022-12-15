@@ -1,9 +1,8 @@
 # BenchPress
 
-## An OOP framework for building modern Wordpress themes and plugins
+### An OOP framework for building modern Wordpress themes and plugins
 
 ---
-<br/><br/>
 
 ## Required Dependencies
 
@@ -11,9 +10,6 @@
 2. Composer (PHP)
 3. Node
 4. NPM or Yarn
-<br/><br/>
----
-<br/>
 
 ## Local Development
 
