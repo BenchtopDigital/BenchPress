@@ -1,0 +1,34 @@
+<html {{ function('language_attributes') }}>
+{% include 'global/head.twig' %}
+
+<body {{ fn('body_class') }}>
+
+     {{  action('site_before') }}
+
+    <header role="banner" class="top-0 right-0 left-0 z-10 p-2 absolute">
+        <div class="flex justify-between items-center p-2">
+            <div class="min-w-[180px]">
+
+            </div>
+            {% include 'global/main-menu.twig' with { menu: menu } %}
+            {% include 'global/mobile-menu.twig' with { menu: menu } %}
+        </div>
+
+        {{ action('header') }}
+    </header>
+
+    <main>
+        {{ action('content_start') }}
+        {% block content %}{% endblock %}
+        {{ action('content_end') }}
+    </main>
+
+    {{ action('content_after') }}
+
+    <footer id="footer">
+        {% include 'global/footer.twig' %}
+    </footer>
+    {{ function('wp_footer') }}
+
+</body>
+</html>

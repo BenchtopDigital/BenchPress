@@ -1,0 +1,9 @@
+<nav class="lg:block hidden">
+	<ul class="flex uppercase text-md text-white">
+		{% for item in menu.items %}
+			<li>
+				<a class="p-4" href="{{ item.link }}">{{ item.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</nav>

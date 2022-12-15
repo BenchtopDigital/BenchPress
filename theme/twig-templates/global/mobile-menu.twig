@@ -1,0 +1,22 @@
+<button class="block lg:hidden hamburger" aria-label="Open Mobile Menu" id="mobileMenuButton">
+	<span></span>
+	<span></span>
+	<span></span>
+</button>
+<div class="mobile-menu shadow-lg bg-white fixed h-screen top-0 right-0 w-screen max-w-[400px] pt-5 hidden">
+	<div class="flex justify-end items-center p-3 pb-0">
+		<button class="close-btn" aria-label="Close Menu">
+			<img src="/img/close.png" alt="Close Menu" class="w-7">
+		</button>
+	</div>
+	<nav role="primary" class="px-7">
+		<h2 class="text-3xl text-center mb-3">Menu</h2>
+		<ul class="text-center text-gray-800 serif">
+			{% for item in menu.items %}
+				<li class="px-4">
+					<a class="p-3 block text-xl border-b-2" href="{{ item.link }}">{{ item.title }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</nav>
+</div>

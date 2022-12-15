@@ -1,0 +1,15 @@
+.DS_Store
+
+# IDE
+.idea
+.vscode
+
+# Dependencies
+node_modules
+vendor
+wordpress/*
+
+# ENV
+.env
+.env.*
+!.env.example

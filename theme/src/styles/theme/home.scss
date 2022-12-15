@@ -1,0 +1,64 @@
+#hero {
+	background-color: #222;
+	background-image: url('/img/hero.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+	&::before {
+		background-color: rgba(0, 0, 0,0.5);
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		z-index: 2;
+	}
+	> div {
+		z-index: 3;
+	}
+	#bgvid {
+		object-fit: cover;
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	a {
+		background-color: #5e8629;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	#hero {
+		background-image: url('/img/fb-hero.jpeg');
+		background-position: top center;
+	}
+}
+
+.slanted {
+	background: #1b1b1b;
+	margin: 0;
+	position: relative;
+	left: -10%;
+
+	&:before {
+		background: inherit;
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: -30%;
+		transform: skew(-20deg);
+		transform-origin: top;
+		width: 50%;
+	}
+
+	> div {
+		position: relative;
+		left: 30%;
+	}
+}

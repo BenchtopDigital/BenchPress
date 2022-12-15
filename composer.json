@@ -1,0 +1,18 @@
+{
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Benchpress\\": "lib/Benchpress"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.0",
+        "timber/timber": "^1.22",
+        "php-di/php-di": "^6.4",
+        "doctrine/annotations": "^1.13"
+    }
+}
